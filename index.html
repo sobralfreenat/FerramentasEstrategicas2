@@ -68,13 +68,20 @@
             cursor: pointer;
         }
  .header-image {
-            width: 15%;
-            height: auto;
-            max-height: 75px; /* Ajuste a altura máxima da imagem */
-            display: block;
-            margin: 0 auto; /* Centraliza a imagem horizontalmente */
-	    z-index: 1000
-        }
+            .header-image {
+    width: 10%;
+    height: auto; 
+    max-height: 75px; /* Ajuste a altura máxima da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    z-index: 1000;
+    position: fixed; /* Fixa a posição da imagem */
+    top: 0; /* Ajuste a posição vertical conforme necessário */
+    left: 0; /* Ajuste a posição horizontal conforme necessário */
+    right: 0; /* Centraliza horizontalmente */
+    object-fit: contain; /* Garante que a imagem se ajuste dentro do contêiner sem distorção */
+}
+        
     </style>
 </head>
 <body>
